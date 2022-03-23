@@ -7,5 +7,8 @@
 
     if($media >= 7)
         echo "Você foi aprovado";
+    
+    else
+        echo "Você foi reprovado";
 
 ?>
