@@ -12,8 +12,9 @@
 <?php
     //exemplo Função TRIM()
     $palavra = "Ciência da computação ";
-    echo "A variável contém " .strlen($palavra)." caracteres"."<br>";
+    echo "A variável contém " .strlen($palavra)." caracteres"."<br>"; //string lenn (comprimento da string)
     
-    $palavra=trim($palavra);
-    echo "A variável agora contém: ".strlen($palavra)."caracteres.";
+    $palavra=trim($palavra); //quantidade sem os espaços
+    echo "A variável agora contém: ".strlen($palavra)." caracteres.";
+
 ?>
