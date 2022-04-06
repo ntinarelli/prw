@@ -4,5 +4,6 @@ apenas os 3 últimos números e exiba-o.*/
 
 $cep=16202447;
 
-substr($cep, 5);
+//parâmetros da substr(string, posição inicil, posição final), a posição começa no zero
+echo substr($cep, 5, 7); 
 ?>
