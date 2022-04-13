@@ -5,22 +5,23 @@
     </head>
     <body>
         <form method = "GET" action = "exer4.php">
-            <h2>Sistema de compras</h2>
+            <fieldset>
+                <legend><h2>Dados do cliente</h2></legend> 
             Nome completo: <input type="text" size="30" name="nome">
             CPF: <input type="text" size="11" name="cpf">
             RG: <input type="text" size="11" name="rg">
             <br>
             <br>
-            Estado: <input type="text" size="20" name="estado">
-            <select name = "estado" value = "defalt" size = "4">
+            Estado:
+            <select name = "estado" value = "defalt" size = "1">
                 <option>Minas Gerais</option>
                 <option>Rio de Janeiro</option>
                 <option>Sao Paulo</option>
             </select>
             <br>
             <br>
-            <input type="radio" name="sexo" value="defalt"> Sexo feminino
-            <input type="radio" name="sexo" value="defalt"> Sexo masculino
+            <input type="radio" name="sexo" value="feminino"> Sexo feminino
+            <input type="radio" name="sexo" value="masculino"> Sexo masculino
             <br>
             <br>
             Saldo (cartao de credito): <input type="text" size="10" name="saldo">
@@ -28,6 +29,7 @@
             <br>
             Total da compra: <input type="text" size="10" name="totalCompra">
             <input type="submit" value="Concluir">
+            </fieldset>
         </form>
     </body>
 </html>
