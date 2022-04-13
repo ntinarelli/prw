@@ -8,9 +8,9 @@ sua multiplicação e apresente o resultado utilizando para isso apenas o operad
 $fator1=2;
 $fator2=3;
 
-for($i=0; $i<=$fator2; $i++)
+echo "(", $fator1, " * ", $fator2, ") = "; 
+
+for($i=1; $i<=$fator2; $i++)
     echo $fator1, " + ";
-
-
 
 ?>
