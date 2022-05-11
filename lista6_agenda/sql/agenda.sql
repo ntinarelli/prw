@@ -1,10 +1,10 @@
---criar banco de dados
+-- criar banco de dados
 create database lista6_agenda;
 
---selecionar banco de dados
+-- selecionar banco de dados
 use lista6_agenda;
 
---criar tabela agenda
+-- criar tabela agenda
 create table agenda (
     id_agenda int not null auto_increment,
     nome varchar(50) not null,
