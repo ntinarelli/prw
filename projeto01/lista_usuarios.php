@@ -19,6 +19,7 @@
             <th>Nome</th>
             <th>E-mail</th>
             <th>Telefone</th>
+            <th>Excluir</th>
         </tr>
         <?php //montar de forma dinâmica as linhas da minha tabela
             while($row = mysqli_fetch_array($result)){
@@ -29,6 +30,7 @@
                 echo "<td> <a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>" .$row['nome_usuario']. "</a></td>"; //link para alterar o usuário
                 echo "<td>". $row['email_usuario'] ."</td>";
                 echo "<td>". $row['telefone_usuario'] ."</td>";
+                echo "<td><a href='excluir_usuario.php?id_usuario=".$row['id_usuario']."'>Excluir</a></td>";
                 echo "</tr>";
             }
         ?>
