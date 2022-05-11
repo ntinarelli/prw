@@ -26,7 +26,7 @@
 
                 echo "<tr>";
                 echo "<td>". $row['id_usuario'] ."</td>";
-                echo "<td>". $row['nome_usuario'] ."</td>";
+                echo "<td> <a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>" .$row['nome_usuario']. "</a></td>"; //link para alterar o usuário
                 echo "<td>". $row['email_usuario'] ."</td>";
                 echo "<td>". $row['telefone_usuario'] ."</td>";
                 echo "</tr>";
