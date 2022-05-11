@@ -19,7 +19,7 @@
 <body>
     <h1>Cadastro de Clientes  - IFSP</h1>
     <div id="teste">
-        <form method="post" action="cadastro_usuario.php">
+        <form method="post" action="altera_usuario_exe.php">
             <fieldset>
                 <legend>Cadastro</legend>
                 <div class="form-item">
