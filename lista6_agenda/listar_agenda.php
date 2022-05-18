@@ -24,7 +24,7 @@
             <th>Estado</th>
             <th>Telefone</th>
             <th>Celular</th>
-            <th>E-mail</th>
+            <th>Email</th>
             <th>Data</th>
             <th>Excluir</th>
         </tr>

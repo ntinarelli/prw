@@ -22,9 +22,10 @@
     echo "Telefone: " . $telefone . "</p>";
     echo "Celular: " . $celular . "</p>";
     echo "Email: " . $email . "</p>";
+    echo "Data: " . $dt_cadastro . "</p>";
 	
-	$sql = "INSERT INTO cliente (cliente_nome,cliente_data,cliente_evento) 
-	        VALUES ('".$cliente."','".$data."','".$evento."')";
+	$sql = "INSERT INTO agenda (nome, apelido, endereco, bairro, cidade, estado, telefone, celular, email) 
+	        VALUES ('".$nome."','".$apelido."','".$endereco."','".$bairro."','".$cidade."','".$estado."','".$telefone."','".$celular."','".$email."')";
 	    
 	$result = mysqli_query($con, $sql);
 	if($result)
