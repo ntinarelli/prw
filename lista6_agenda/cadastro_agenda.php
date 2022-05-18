@@ -1,12 +1,27 @@
 <?php
     include('conexao.php');
-    $cliente = $_POST['cliente'];
-    $data = $_POST['data'];
-    $evento = $_POST['evento'];
+    $nome = $_POST['nome'];
+    $apelido = $_POST['apelido'];
+    $endereco = $_POST['endereco'];
+    $bairro = $_POST['bairro'];
+    $cidade = $_POST['cidade'];
+    $estado = $_POST['estado'];
+    $telefone = $_POST['telefone'];
+    $celular = $_POST['celular'];
+    $email = $_POST['email'];
+    $dt_cadastro = date("Y-m-d");
+
+
     echo "<h1> Agendar cliente</h1>";
-    echo "<p> Cliente: " . $cliente . "<br>";
-    echo "Data: " . $data . "<br>";
-    echo "Evento: " . $evento . "</p>";
+    echo "<p> Nome: " . $nome . "<br>";
+    echo "Apelido: " . $apelido . "<br>";
+    echo "Endereço: " . $endereco . "</p>";
+    echo "bairro: " . $bairro . "</p>";
+    echo "cidade: " . $cidade . "</p>";
+    echo "Estado: " . $estado . "</p>";
+    echo "Telefone: " . $telefone . "</p>";
+    echo "Celular: " . $celular . "</p>";
+    echo "Email: " . $email . "</p>";
 	
 	$sql = "INSERT INTO cliente (cliente_nome,cliente_data,cliente_evento) 
 	        VALUES ('".$cliente."','".$data."','".$evento."')";
