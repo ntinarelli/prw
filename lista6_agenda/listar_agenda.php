@@ -25,6 +25,7 @@
             <th>Telefone</th>
             <th>Celular</th>
             <th>E-mail</th>
+            <th>Data</th>
             <th>Excluir</th>
         </tr>
         <?php //montar de forma dinâmica as linhas da minha tabela
@@ -42,6 +43,7 @@
                 echo "<td>". $row['telefone'] ."</td>";
                 echo "<td>". $row['celular'] ."</td>";
                 echo "<td>". $row['email'] ."</td>";
+                echo "<td>". $row['dt_cadastro'] ."</td>";
                 echo "<td><a href='excluir_agenda.php?id_agenda=".$row['id_agenda']."'>Excluir</a></td>";
                 echo "</tr>";
             }
