@@ -21,7 +21,7 @@
     <div id="teste">
         <form method="post" action="altera_usuario_exe.php">
             <fieldset>
-            legend>Cadastro</legend>
+            <legend>Cadastro</legend>
                 <div class="form-item">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite o nome">

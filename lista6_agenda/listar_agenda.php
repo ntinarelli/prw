@@ -34,7 +34,7 @@
 
                 echo "<tr>";
                 echo "<td>". $row['id_agenda'] ."</td>";
-                echo "<td> <a href='altera_agenda.php?id_cliente=".$row['id_agenda']."'>" .$row['nome']. "</a></td>"; //link para alterar o usuário
+                echo "<td> <a href='altera_agenda.php?id_agenda=".$row['id_agenda']."'>" .$row['nome']. "</a></td>"; //link para alterar o usuário
                 echo "<td>". $row['apelido'] ."</td>";
                 echo "<td>". $row['endereco'] ."</td>";
                 echo "<td>". $row['bairro'] ."</td>";
