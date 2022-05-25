@@ -25,7 +25,7 @@
     echo "Email: " . $email . "<br>";
     echo "Telefone: " . $telefone . "</p>";
 	
-	$sql = "INSERT INTO usuario (nome_usuario,email_usuario,telefone_usuario, foto_blob, foto_name) 
+	$sql = "INSERT INTO usuario (nome_usuario,email_usuario,telefone_usuario, foto_blob, foto_nome) 
 	        VALUES ('".$nome."','".$email."','".$telefone."','".$fotoBlob. "','" .$fotoNome."')";
 	    
 	$result = mysqli_query($con, $sql);
