@@ -16,6 +16,7 @@
         <!--table row (primeira linha) tr>th*4 (4 colunas)-->
         <tr>
             <th>Codigo</th>
+            <th>Foto</th>
             <th>Nome</th>
             <th>E-mail</th>
             <th>Telefone</th>
@@ -27,6 +28,7 @@
 
                 echo "<tr>";
                 echo "<td>". $row['id_usuario'] ."</td>";
+                echo "<td><img src='data: image/jget;base64,".base64_encode($row["foto_blob"])."' width='150' height='150'/></td>";
                 echo "<td> <a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>" .$row['nome_usuario']. "</a></td>"; //link para alterar o usuário
                 echo "<td>". $row['email_usuario'] ."</td>";
                 echo "<td>". $row['telefone_usuario'] ."</td>";
