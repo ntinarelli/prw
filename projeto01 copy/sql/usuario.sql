@@ -1,1 +1,0 @@
-SELECT * FROM projeto01.usuario;
