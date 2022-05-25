@@ -24,6 +24,26 @@
 
     echo "<h1> Alteração de dados </h1>";
     echo "<p> Nome Usuário: " . $nome . "<p>";
+    if(strlen($fotoNome) > 0){
+        $sql = "UPDATE usuario SET 
+                nome_usuario='".$nome."',
+                email_usuario='".$email."',
+                telefone_usuario='".$telefone."',
+                foto_blob='".$fotoBlob."',
+                foto_nome='".$fotoNome."'
+
+                WHERE id_usuario=".$id_usuario;
+    }
+    else{
+        $sql = "UPDATE usuario SET 
+                    nome_usuario='".$nome."',
+                    email_usuario='".$email."',
+                    telefone_usuario='".$telefone."'
+
+                    WHERE id_usuario=".$id_usuario;
+    }
+
+
     echo "<p> email Usuário: " . $email . "<p>";
     echo "<p> Tel: " . $telefone . "<p>";
     echo "<p> id: " . $id_usuario . "<p>";
