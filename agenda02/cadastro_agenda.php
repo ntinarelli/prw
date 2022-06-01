@@ -1,9 +1,9 @@
 <?php
     include('conexao.php');
 
-    $fotoNome = $_FILES['foto']['nome'];
+    $fotoNome = $_FILES['foto']['name'];
     $target_dir = "upload/";//onde jogo minhas fotos
-    $target_file = $target_dir . basename($_FILES["foto"]["nome"]);//concatenar a foto com o nome do arquivo
+    $target_file = $target_dir . basename($_FILES["foto"]["name"]);//concatenar a foto com o nome do arquivo
     //Selecionar tipo de arquivo
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
     //verificar se o tipo de arquivo é permitido (pega o final do arquivo e verifica se é permitido)
