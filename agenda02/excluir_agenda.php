@@ -11,7 +11,7 @@
     if($result)
         echo "Registro excluído com sucesso<br>";
     else 
-        echo "Erro ao tentar excluir usuário: ".mysqli_error($con)."<br>";
+        echo "Erro ao tentar excluir agenda: ".mysqli_error($con)."<br>";
 
 ?>
 <a href='listar_agenda.php'> Voltar</a>
