@@ -67,7 +67,7 @@
                     <input id="btn" type="submit" value="Enviar" >
                     <a href="index.php"> Voltar </a>;
                 </div>
-                <input name="id-agenda" type="hidden" value="<?php echo $row['id_agenda']?>">
+                <input name="id_agenda" type="hidden" value="<?php echo $row['id_agenda']?>">
             </fieldset>
         </form>
     </div>

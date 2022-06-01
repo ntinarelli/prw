@@ -54,7 +54,7 @@
             email='".$email."',
             foto_blob='".$fotoBlob."',
             foto_nome='".$fotoNome."'
-            WHERE id_cliente=".$id_agenda; 
+            WHERE id_agenda=".$id_agenda; 
     }
 
     else{
@@ -67,10 +67,8 @@
             estado='".$estado."',
             telefone='".$telefone."',
             celular='".$celular."',
-            email='".$email."',
-            foto_blob='".$fotoBlob."',
-            foto_nome='".$fotoNome."'
-            WHERE id_cliente=".$id_agenda; 
+            email='".$email."'
+            WHERE id_agenda=".$id_agenda; 
     }
 
     $result = mysqli_query($con, $sql); //acessando o banco
