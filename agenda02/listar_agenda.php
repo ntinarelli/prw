@@ -16,6 +16,7 @@
         <!--table row (primeira linha) tr>th*4 (4 colunas)-->
         <tr>
             <th>Codigo</th>
+            <th>Foto</th>
             <th>Nome</th>
             <th>Apelido</th>
             <th>Endereço</th>
@@ -33,7 +34,8 @@
                 //para cada vez que ele executar esse código, ele cria uma linha
 
                 echo "<tr>";
-                echo "<td>". $row['id_agenda'] ."</td>";
+                echo "<td>". $row['id_agenda'] ."</td>";               
+                echo "<td><img src='data: image/jget;base64,".base64_encode($row["foto_blob"])."' width='150' height='150'/></td>";
                 echo "<td> <a href='altera_agenda.php?id_agenda=".$row['id_agenda']."'>" .$row['nome']. "</a></td>"; //link para alterar o usuário
                 echo "<td>". $row['apelido'] ."</td>";
                 echo "<td>". $row['endereco'] ."</td>";
