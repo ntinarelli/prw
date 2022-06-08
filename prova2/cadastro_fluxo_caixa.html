@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de caixa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Fluxo do Caixa</h1>
+    <div id="teste">
+        <form method="post" action="cadastro_fluxo_caixa.php" enctype="multipart/form-data">
+            <fieldset>
+                <legend><h2>Cadastro de Fluxo de Caixa</h2></legend>
+                <div class="form-item">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <br>
+                <div class="form-item">
+                    <label for="tipo">Tipo:</label>
+                    <input type="radio" id="tipo" name="tipo" value="entrada">Entrada  
+                    <input type="radio" id="tipo" name="tipo" value="saida">Saída                        
+                </div>
+                <br>
+                <div class="form-item">
+                    <label for="valor">Valor:</label>
+                    <input type="text" id="valor" name="valor" placeholder="Digite o valor">
+                </div>
+                <br>
+                <div class="form-item">
+                    <label for="historico">Historico:</label>
+                    <input type="text" id="historico" name="historico">
+                </div>
+                <br>
+                <label for="cheque">Cheque:</label>
+                <SELECT NAME = "cheque" VALUE = "valor default" SIZE = "1">
+                    <option> Sim </option>
+                    <option> Não </option>
+                </SELECT>  
+                <br>
+                <br>
+                <div class="form-item"> 
+                    <input id="btn" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
