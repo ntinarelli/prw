@@ -3,6 +3,7 @@
 
     $tipoConsulta = $_POST['tipoConsulta'];
 
+
     echo "<h1> Fluxo de Caixa</h1>";
     echo "<p> Tipo consulta: " . $tipoConsulta . "</p>";
             
@@ -16,14 +17,13 @@
 
     }else if($tipoConsulta == 'saldo'){
 
-        $sql="select sum(case when tipo = 'entrada' then valor else 0 end) 
+        $sql="select sum(case when tipo = 'entrada' then valor else 0 end) - 
             sum(case when tipo = 'saida' then valor else 0 end) as valor from fluxo_caixa";
 
     }
-	    
+	
+
 	$result = mysqli_query($con, $sql);
-	if($result)
-		echo "Dados inseridos com sucesso";
-	else
-		echo "Erro ao inserir no banco de dados: ".mysqli_error($con);
+    $row=mysqli_fetch_array($result);
+    echo $row['valor'];
 ?>
